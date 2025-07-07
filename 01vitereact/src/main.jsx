@@ -17,12 +17,9 @@ const reactElement=React.createElement(
   'click me to visit googleeee',
   anotherUser
 )
-
-
 const MyApp=function(){
   return "chai aour codeinf!"
 }
-
 const AnotherElement=(
   <a href="https:google.com" target="_blank">VisitGoogle </a>
 )
