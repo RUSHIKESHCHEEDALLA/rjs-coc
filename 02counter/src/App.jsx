@@ -11,6 +11,13 @@ function App() {
   const subValue= ()=>{
     if(value>0){
       setValue(value-1)
+      setValue(value-1)
+      setValue(value-1)
+      //above will go in batch wise so the value is decreased only once
+      setValue(prevValue=>prevValue-1)
+      setValue(prevValue=>prevValue-1)
+      setValue(prevValue=>prevValue-1)
+      //above will go with taking prev value so the value is decreased by 3 times
     }
   }
   return (
