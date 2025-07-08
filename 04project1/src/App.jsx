@@ -1,5 +1,5 @@
 import { useState } from "react";
-import "./App.css"; // Import custom CSS
+import "./App.css"; 
 
 function App() {
   const [color, setColor] = useState("olive");
@@ -11,22 +11,19 @@ function App() {
           <button
             onClick={() => setColor("red")}
             className="color-button"
-            style={{ backgroundColor: "red" }}
-          >
+            style={{ backgroundColor: "red" }}>
             Red
           </button>
           <button
             onClick={() => setColor("green")}
             className="color-button"
-            style={{ backgroundColor: "green" }}
-          >
+            style={{ backgroundColor: "green" }}>
             Green
           </button>
           <button
             onClick={() => setColor("blue")}
             className="color-button"
-            style={{ backgroundColor: "blue" }}
-          >
+            style={{ backgroundColor: "blue" }}>
             Blue
           </button>
         </div>
