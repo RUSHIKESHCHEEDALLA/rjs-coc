@@ -23,8 +23,9 @@ function App() {
   },[len,number,setPass,char])
   useEffect(()=>{passGenerator()},[len,number,char,passGenerator])
   return (
-    <>
-    <div className = 'w-full max-w-md mx-auto shadow-md rounded-lg px-4 py-3 my-8 text-orange-500 bg-gray-800 '>
+    <div className="w-full h-screen flex flex-wrap justify-center items-center bg-cover bg-no-repeat" 
+        style={{backgroundImage: `url('https://images.pexels.com/photos/3532540/pexels-photo-3532540.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2')`}}>
+    <div className = 'w-full max-w-md mx-auto shadow-md rounded-lg px-4 py-3 my-8 text-orange-500 bg-gray-800 ' >
       <h1 className='text-white text-center my-3'>Password Generator</h1>
       <div className='flex shadow rounded-lg overflow-hidden mb-4 bg-white'>
         <input type="text" value={pass} className='outline-none w-full py-1 px-3 ' placeholder='password'  readOnly ref={passRef} />
@@ -45,7 +46,7 @@ function App() {
         </div>
       </div>
     </div>
-    </>
+    </div>
   )
 }
 
